@@ -3,9 +3,9 @@ This repo provides a Google Colab notebook that installs an older version of Ten
 
 It follows the example provided on the OpenNMT website (https://opennmt.net/Models-tf/) and more specifically this repo: https://github.com/OpenNMT/OpenNMT-tf/tree/master/scripts/wmt
 
-As a newcomer to OpenNMT, it took me a while to build this model from scratch due to a variety of concerns that arose when using Google Colab:  
+As a newcomer to OpenNMT, it took me a while to build this notebook from scratch due to a variety of concerns that arose when using Google Colab:  
 
-Note: The reason a plural "notebook(s)" is used is to account for the different notebooks that accomplish similar but unique tasks (e.g., (a) build the SentencePiece model and vocab files, (b) to train the OpenNMT model and (c) to make inferences off a test set.  These cold of course be put in the same notebook but would be cumbersome and a bit unruly.
+Note: The reason a plural "notebook(s)" is used is to account for the different notebooks that accomplish similar but unique tasks (e.g., (a) build the SentencePiece model and vocab files, (b) to train the OpenNMT model and (c) to make inferences off a test set.  These cold of course be put in the same notebook but would be cumbersome and a bit unruly).
 
 1) The notebook(s) connects with Google Drive for the data files (the data is included in this repo)
 2) The notebook(s) downgrades TF (current Google Colab builds come installed with TF 2.15) since at the time of my project OpenNMT is compatible with TF builds up through 2.13.
