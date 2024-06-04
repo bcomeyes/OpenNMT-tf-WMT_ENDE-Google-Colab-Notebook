@@ -1,7 +1,7 @@
 # OpenNMT-tf_WMT_ENDE_Colab_end_to_end
-This repo provides a Google Colab notebook that installs an older version of TensorFlow along with necessary components to utilize GPUs.  It provides an end to end notebook(s) for new users who want to make use of Google Colab for learning how to use OpenNMT.
+This repo provides Google Colab notebooks that follow the example provided on the OpenNMT website (https://opennmt.net/Models-tf/) and more specifically this repo: https://github.com/OpenNMT/OpenNMT-tf/tree/master/scripts/wmt
 
-It follows the example provided on the OpenNMT website (https://opennmt.net/Models-tf/) and more specifically this repo: https://github.com/OpenNMT/OpenNMT-tf/tree/master/scripts/wmt
+Essentially, the notebooks help the new user get started and overcome some obstacles to doing the tutorial listed in the repo above, including installing an older version of TensorFlow along with implementing the necessary steps to utilize GPUs.  It provides a "ready to use out of the box" notebook(s) for new users who want to make use of Google Colab for learning how to use OpenNMT.
 
 As a newcomer to OpenNMT, it took me a while to build this notebook from scratch due to a variety of concerns that arose when using Google Colab:  
 
