@@ -16,14 +16,14 @@ Steps to use this notebook with Google Drive and Google Colab:
 3) Create two more folders: config and data
 4) Inside config directory, place the .yml file
 5) Inside data directory, place the following files wmt_EN_DE/data:
-train.en /n
-train.de /n
-valid.en /n
+train.en
+train.de
+valid.en
 valid.de
 wmtende.model
 wmtendevocab
 You can either tokenize them yourself with SentencePiece or download wmt_ende_sp.tar.gz from the data hyperlink at OpenNMT's website https://s3.amazonaws.com/opennmt-trainingdata/wmt_ende_sp.tar.gz
 (Note: See https://github.com/OpenNMT/OpenNMT-tf/tree/master/scripts/wmt for more info on this part)
-6) Open and run the file: wmt_EN_DE_NMT.ipynb
+7) Open and run the file: wmt_EN_DE_NMT.ipynb
 
 
