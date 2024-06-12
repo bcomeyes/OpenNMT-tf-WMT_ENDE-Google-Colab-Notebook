@@ -16,9 +16,9 @@ Steps to use this notebook with Google Drive and Google Colab:
 3) Create two more folders: config and data
 4) Inside config directory, place the .yml file
 5) Inside data directory, place the following files wmt_EN_DE/data:
-train.en
-train.de
-valid.en
+train.en /n
+train.de /n
+valid.en /n
 valid.de
 wmtende.model
 wmtendevocab
