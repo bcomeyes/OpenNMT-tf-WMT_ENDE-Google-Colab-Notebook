@@ -22,7 +22,7 @@ valid.en,
 valid.de,
 wmtende.model,
 wmtendevocab
-  You can either tokenize them yourself with SentencePiece or download wmt_ende_sp.tar.gz from the data hyperlink at OpenNMT's website https://s3.amazonaws.com/opennmt-trainingdata/wmt_ende_sp.tar.gz
+  You can either tokenize them yourself with SentencePiece or get the files from the tar.gz file "wmt_ende_sp.tar.gz" from the data hyperlink at OpenNMT's website https://s3.amazonaws.com/opennmt-trainingdata/wmt_ende_sp.tar.gz  and put the six files into the data directory.
 (Note: See https://github.com/OpenNMT/OpenNMT-tf/tree/master/scripts/wmt for more info on this part)
 7) Open and run the file: wmt_EN_DE_NMT.ipynb
 
