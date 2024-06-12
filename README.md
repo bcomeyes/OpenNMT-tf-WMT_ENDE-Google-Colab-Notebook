@@ -5,11 +5,25 @@ Essentially, the notebook helps the new user get started and overcome some obsta
 
 As a newcomer to OpenNMT, it took me a while to build this notebook from scratch due to a variety of concerns that arose when using Google Colab:  
 
-Note: The reason a plural "notebook(s)" is used is to account for the different notebooks that accomplish similar but unique tasks (e.g., (a) build the SentencePiece model and vocab files, (b) to train the OpenNMT model and (c) to make inferences off a test set.  These cold of course be put in the same notebook but would be cumbersome and a bit unruly).
+1) The notebook connects with Google Drive for the data files
+2) The notebook downgrades TF (current Google Colab builds come installed with TF 2.15) since at the time of my project OpenNMT is compatible with TF builds up through 2.13.
+3) The notebook install cuda and cudnn so that GPUs can be utilized (this notebook utilzed a single A100 GPU which worked fine and ran to completion [i.e. no improvement on BLEU score after multiple evaluation cycles]).  There is a link at the top of the notebooks on getting started with multiple GPUs if you would like to try that.
+4) The notebook installs and builds the SentencePiece command line tools from C++ source (we won't use "pip install sentencepiece") for reasons explained in OpenNMT repo listed above.
 
-1) The notebook(s) connects with Google Drive for the data files (the data is included in this repo)
-2) The notebook(s) downgrades TF (current Google Colab builds come installed with TF 2.15) since at the time of my project OpenNMT is compatible with TF builds up through 2.13.
-3) The notebook(s) install cuda and cudnn so that GPUs can be utilized (this notebook utilzed a single A100 GPU which worked fine and ran to completion [i.e. no improvement on BLEU score after multiple evaluation cycles]).  There is a link at the top of the notebooks on getting started with multiple GPUs if you would like to try that.
-4) The notebook(s) installs and builds the SentencePiece command line tools from C++ source (we won't use "pip install sentencepiece") for reasons explained in OpenNMT repo listed above.
+Steps to use this notebook with Google Drive and Google Colab:
+1) Create a folder on Google Drive (e.g., wmt_ende)
+2) Change directory so that you are inside wmt_ende
+3) Create two more folders: config and data
+4) Inside config directory, place the .yml file
+5) Inside data directory, place the following files wmt_EN_DE/data:
+train.en
+train.de
+valid.en
+valid.de
+wmtende.model
+wmtendevocab
+You can either tokenize them yourself with SentencePiece or download wmt_ende_sp.tar.gz from the data hyperlink at OpenNMT's website https://s3.amazonaws.com/opennmt-trainingdata/wmt_ende_sp.tar.gz
+(Note: See https://github.com/OpenNMT/OpenNMT-tf/tree/master/scripts/wmt for more info on this part)
+6) Open and run the file: wmt_EN_DE_NMT.ipynb
 
-More coming soon...
+
